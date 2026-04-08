@@ -1,0 +1,18 @@
+name: businessenv
+version: 0.1.0
+description: Multi-turn business reasoning RL environment with 3 tasks
+
+client:
+  class_name: BusinessEnv
+  module: client
+
+action:
+  class_name: BusinessAction
+  module: models
+
+observation:
+  class_name: BusinessObservation
+  module: models
+
+default_image: businessenv:latest
+spec_version: 1

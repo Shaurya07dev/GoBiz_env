@@ -1,0 +1,31 @@
+# Environment secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Test/cache artifacts
+.pytest_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# uv
+.python-version
+
+DESC.md
