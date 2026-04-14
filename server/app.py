@@ -34,7 +34,13 @@ except (ImportError, ModuleNotFoundError):
     from businessenv.models import BusinessAction, BusinessObservation
 
 
+from fastapi.responses import RedirectResponse
+
 app = create_fastapi_app(BusinessEnv, BusinessAction, BusinessObservation)
+
+@app.get("/")
+def read_root():
+    return RedirectResponse(url="/web")
 
 
 def main(host: str = "0.0.0.0", port: int = 8000):
